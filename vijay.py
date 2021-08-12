@@ -1,0 +1,31 @@
+from tkinter import *
+root = Tk()
+root.title("System")
+root.iconbitmap("vj.ico")
+root.maxsize(width=500, height=300)
+root.minsize(width=300,height=200)
+# root.geometry("500x300")
+
+redbutton = Button(root, text="LEFT",fg="green",bg="yellow").pack(side=LEFT)
+# redbutton.pack(side=LEFT)
+greenbutton = Button(root,text = "RIGHT",fg="Black")
+greenbutton.pack(side=RIGHT)
+yellowbutton = Button(root,text = "UP",fg="blue")
+yellowbutton.pack(side=TOP)
+purplebutton = Button(root,text = "DOWN",fg="purple")
+purplebutton.pack(side=BOTTOM)
+
+# name = Label(root,text="Name").grid(row=0,column=0)
+# e1 = Entry(root).grid(row=0,column=1)
+# password = Label(root,text="Password").grid(row=1,column=0)
+# e2 = Entry(root).grid(row=1,column=1)
+# Login = Button(root,text="Login").grid(row=6,column=1)
+
+# name = Label(root,text="Name").place(x=30,y=50)
+# address  = Label(root,text="Address").place(x=30,y=80)
+# contact = Label(root,text="Contact").place(x=30,y=110)
+# e1 =Entry(root).place(x=90,y=50)
+# e1 =Entry(root).place(x=94,y=80)
+# e1 =Entry(root).place(x=93,y=110)
+
+root.mainloop()
